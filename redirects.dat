@@ -48,7 +48,6 @@
 #
 
 # Shop redirects
-funnel	shop.wiktionary.org	//shop.wikimedia.org/
 funnel	store.wiktionary.org	//shop.wikimedia.org/
 funnel	shop.wikiquote.org	//shop.wikimedia.org/
 funnel	store.wikiquote.org	//shop.wikimedia.org/
