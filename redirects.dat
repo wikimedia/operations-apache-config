@@ -427,11 +427,6 @@ funnel	*wikimedia.com	//www.wikimedia.org
 # wikimedia.us redirect
 funnel	*wikimedia.us	//www.wikimedia.org
 
-# wlm.wikimedia.org was used for Wiki Loves Monuments App in 2012
-# TODO: this is not a human-usable site, can be killed (along with its DNS record)
-# sometime in 2013
-rewrite	wlm.wikimedia.org	//toolserver.org/~erfgoed
-
 # tartupeedia.ee (WMEE-owned domain) - bug 44893
 funnel	*tartupeedia.ee	//et.wikipedia.org/wiki/Portaal:Tartupeedia
 
