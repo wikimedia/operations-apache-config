@@ -456,3 +456,7 @@ rewrite	*jobs.wikipedia.org	//wikimediafoundation.org/wiki/Job_openings
 override	*careers.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 override	*jobs.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 
+# mobile redirects for commonly-used domains
+funnel	mobile.wikipedia.org	//m.wikipedia.org
+rewrite	*.mobile.wikipedia.org	//*.m.wikipedia.org
+rewrite	*.wap.wikipedia.org	//*.m.wikipedia.org
