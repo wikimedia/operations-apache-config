@@ -421,13 +421,6 @@ rewrite	*wikimania.asia	//wikimania2013.wikimedia.org
 # labs -> wikitech
 funnel	labs.wikimedia.org	https://wikitech.wikimedia.org/
 
-# old sub.sub labs domains, redirect to wikitech/labs
-funnel	*de.labs.wikimedia.org	https://wikitech.wikimedia.org/
-funnel	*en.labs.wikimedia.org	https://wikitech.wikimedia.org/
-funnel	*flaggedrevs.labs.wikimedia.org	https://wikitech.wikimedia.org/
-funnel	*liquidthreads.labs.wikimedia.org	https://wikitech.wikimedia.org/
-funnel	*readerfeedback.labs.wikimedia.org	https://wikitech.wikimedia.org/
-
 # wikimedia.com redirect
 funnel	*wikimedia.com	//www.wikimedia.org
 
