@@ -460,3 +460,6 @@ override	*jobs.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 funnel	mobile.wikipedia.org	//m.wikipedia.org
 rewrite	*.mobile.wikipedia.org	//*.m.wikipedia.org
 rewrite	*.wap.wikipedia.org	//*.m.wikipedia.org
+
+# kr.wikimedia redirect - bugzilla #54883
+funnel  kr.wikimedia.org    //meta.wikimedia.org/wiki/위키미디어_대한민국
