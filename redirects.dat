@@ -460,3 +460,6 @@ override	*jobs.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 funnel	mobile.wikipedia.org	//m.wikipedia.org
 rewrite	*.mobile.wikipedia.org	//*.m.wikipedia.org
 rewrite	*.wap.wikipedia.org	//*.m.wikipedia.org
+
+# mobile redirect for Wikidata - bugzilla #49261
+funnel	m.wikidata.org	//www.wikidata.org
