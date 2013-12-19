@@ -87,8 +87,6 @@ funnel	*wikijunior.com	http://en.wikibooks.org/wiki/Wikijunior
 funnel	*wikijunior.org	http://en.wikibooks.org/wiki/Wikijunior
 funnel	*wikijunior.net	http://en.wikibooks.org/wiki/Wikijunior
 
-funnel	educacao.wikimedia.org	//pt.wikipedia.org/wiki/Wikip%C3%A9dia:WU
-
 # Language aliases
 rewrite	be-x-old.wikisource.org	//be.wikisource.org # Bug 41755
 rewrite	de-beta.wikipedia.org	//de.wikipedia.org
@@ -160,6 +158,11 @@ rewrite	wikibook.org	//en.wikibooks.org
 rewrite	textbook.wikipedia.org	//www.wikibooks.org
 
 # Education program
+
+funnel	educacao.wikimedia.org	//pt.wikipedia.org/wiki/Wikip%C3%A9dia:WU
+
+override	education.wikimedia.org/evaluating	//commons.wikimedia.org/wiki/File:Evaluating_Wikipedia_brochure.pdf
+override	education.wikimedia.org/illustrating	//commons.wikimedia.org/wiki/File:Illustrating_Wikipedia_brochure.pdf
 
 override	education.wikimedia.org/casestudies	//outreach.wikimedia.org/wiki/Education/Case_Studies
 
