@@ -225,7 +225,7 @@ class DomainRedirectParser {
 		$dest = preg_replace_callback( 
 			'/[\x80-\xff]/',
 			function ($matches) {
-				return urlencode( $matches[0] );
+				return '\\' . urlencode( $matches[0] );
 			},
 			$dest );
 
