@@ -431,7 +431,7 @@ EOT
 
 		fwrite( $f, 
 			"</VirtualHost>\n" .
-			"# vim" . ": sts=4 sw=4 autoindent syn=apache" );
+			"# vim" . ": sts=4 sw=4 autoindent syn=apache\n" );
 		fclose( $f );
 	}
 
