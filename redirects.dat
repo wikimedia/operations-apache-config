@@ -83,9 +83,9 @@ rewrite	donate.wiktionary.org	https://donate.wikimedia.org
 
 funnel	sep11.wikipedia.org	http://wayback.archive.org/web/20030315000000*/http://sep11.wikipedia.org/wiki/In_Memoriam
 
-funnel	*wikijunior.com	http://en.wikibooks.org/wiki/Wikijunior
-funnel	*wikijunior.org	http://en.wikibooks.org/wiki/Wikijunior
-funnel	*wikijunior.net	http://en.wikibooks.org/wiki/Wikijunior
+funnel	*wikijunior.com	//en.wikibooks.org/wiki/Wikijunior
+funnel	*wikijunior.org	//en.wikibooks.org/wiki/Wikijunior
+funnel	*wikijunior.net	//en.wikibooks.org/wiki/Wikijunior
 
 # Language aliases
 rewrite	be-x-old.wikisource.org	//be.wikisource.org # Bug 41755
@@ -135,10 +135,6 @@ funnel	*wikiartpedia.me	//www.wikipedia.org
 funnel	*wikiartpedia.mobi	//www.wikipedia.org
 funnel	*wikiartpedia.net	//www.wikipedia.org
 funnel	*wikiartpedia.org	//www.wikipedia.org
-
-# Wikibooks
-override	wikibooks.org/	http://en.wikibooks.org/wiki/Wikibooks_portal
-override	wikibooks.com/	http://en.wikibooks.org/wiki/Wikibooks_portal
 
 # Redirect old URLs to en.wikibooks.org, to avoid breaking them
 rewrite	wikibooks.org	//en.wikibooks.org
@@ -225,13 +221,13 @@ rewrite	*wikimedia.ee	//et.wikimedia.org
 
 rewrite	*wikipedia.ee	//et.wikipedia.org
 
-rewrite	*wikimedia.biz	//wikimedia.org
-rewrite	*wikimedia.jp.net	//wikimedia.org
+rewrite	*wikimedia.biz	//www.wikimedia.org
+rewrite	*wikimedia.jp.net	//www.wikimedia.org
 
 rewrite	*wikimedia.lt	//wikimediafoundation.org
 rewrite	*wikipedia.lt	//lt.wikipedia.org
 
-rewrite	*wikimemory.org	//wikimedia.org
+rewrite	*wikimemory.org	//www.wikimedia.org
 
 # Wikipedia
 
@@ -304,7 +300,7 @@ rewrite	*.wikiquote.net	//*.wikiquote.org
 
 # Wikinews
 
-rewrite	wikinews.com	//wikinews.org
+rewrite	wikinews.com	//www.wikinews.org
 rewrite	*.wikinews.com	//*.wikinews.org
 
 # Wikispecies
@@ -322,9 +318,9 @@ rewrite	*.wikiversity.com	//*.wikiversity.org
 rewrite	*.wikiversity.net	//*.wikiversity.org
 rewrite	*.wikiversity.info	//*.wikiversity.org
 
-rewrite	wikiversity.com	//wikiversity.org
-rewrite	wikiversity.net	//wikiversity.org
-rewrite	wikiversity.info	//wikiversity.org
+rewrite	wikiversity.com	//www.wikiversity.org
+rewrite	wikiversity.net	//www.wikiversity.org
+rewrite	wikiversity.info	//www.wikiversity.org
 
 # Wikivoyage
 rewrite	*.wikivoyage.com	//*.wikivoyage.org
@@ -393,7 +389,6 @@ rewrite	bugzilla.wikipedia.org	https://bugzilla.wikimedia.org
 rewrite	bugs.mediawiki.org	https://bugzilla.wikimedia.org
 rewrite	bugzilla.mediawiki.org	https://bugzilla.wikimedia.org
 
-rewrite	mediawiki.org	//www.mediawiki.org
 rewrite	*mediawiki.com	//www.mediawiki.org
 rewrite	wiki.mediawiki.org	//www.mediawiki.org
 
@@ -406,6 +401,22 @@ rewrite	*softwarewikipedia.net	//www.mediawiki.org
 rewrite	*softwarewikipedia.org	//www.mediawiki.org
 
 rewrite	nostalgia.wikimedia.org	//nostalgia.wikipedia.org
+
+###############
+## projects
+###############
+#wikipedia is in wwwportals.conf
+rewrite	mediawiki.org	//www.mediawiki.org
+rewrite	wikimedia.org	//www.wikimedia.org
+rewrite	wikinews.org	//www.wikinews.org
+rewrite	wikiquote.org	//www.wikiquote.org
+rewrite	wikiversity.org	//www.wikiversity.org
+rewrite	wikivoyage.org	//www.wikivoyage.org
+rewrite	wikibooks.org	//www.wikibooks.org
+rewrite	wiktionary.org	//www.wiktionary.org
+rewrite	wikidata.org	//www.wikidata.org #bug 45005
+
+rewrite	www.wikisource.org	//wikisource.org
 
 ###############
 ## chapters
