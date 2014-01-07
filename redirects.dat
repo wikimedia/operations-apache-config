@@ -224,13 +224,13 @@ rewrite	*wikimedia.ee	//et.wikimedia.org
 
 rewrite	*wikipedia.ee	//et.wikipedia.org
 
-rewrite	*wikimedia.biz	//wikimedia.org
-rewrite	*wikimedia.jp.net	//wikimedia.org
+rewrite	*wikimedia.biz	//www.wikimedia.org
+rewrite	*wikimedia.jp.net	//www.wikimedia.org
 
 rewrite	*wikimedia.lt	//wikimediafoundation.org
 rewrite	*wikipedia.lt	//lt.wikipedia.org
 
-rewrite	*wikimemory.org	//wikimedia.org
+rewrite	*wikimemory.org	//www.wikimedia.org
 
 # Wikipedia
 
@@ -433,6 +433,9 @@ funnel	*wikimedia.com	//www.wikimedia.org
 
 # wikimedia.us redirect
 funnel	*wikimedia.us	//www.wikimedia.org
+
+# wikimedia.org redirect
+funnel	wikimedia.org	//www.wikimedia.org
 
 # tartupeedia.ee (WMEE-owned domain) - bug 44893
 funnel	*tartupeedia.ee	//et.wikipedia.org/wiki/Portaal:Tartupeedia
