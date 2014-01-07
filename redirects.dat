@@ -462,9 +462,13 @@ funnel	*wikipediastories.net	//wikimediafoundation.org/wiki/Thank_You_All
 funnel	*wikipediastories.org	//wikimediafoundation.org/wiki/Thank_You_All
 
 # jobs/careers - RT #5709
+rewrite	*careers.wikimedia.org	//wikimediafoundation.org/wiki/Job_openings
 rewrite	*careers.wikipedia.org	//wikimediafoundation.org/wiki/Job_openings
+rewrite	*jobs.wikimedia.org	//wikimediafoundation.org/wiki/Job_openings
 rewrite	*jobs.wikipedia.org	//wikimediafoundation.org/wiki/Job_openings
+override	*careers.wikimedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 override	*careers.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
+override	*jobs.wikimedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 override	*jobs.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 
 # mobile redirects for commonly-used domains
