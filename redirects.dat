@@ -395,6 +395,10 @@ rewrite	mediawiki.org	//www.mediawiki.org
 rewrite	*mediawiki.com	//www.mediawiki.org
 rewrite	wiki.mediawiki.org	//www.mediawiki.org
 
+# Continuous Integration RT 6593, RT 6594
+funnel	doc.mediawiki.org	https://doc.wikimedia.org
+funnel	integration.mediawiki.org	https://integration.wikimedia.org
+
 rewrite	*softwarewikipedia.com	//www.mediawiki.org
 rewrite	*softwarewikipedia.net	//www.mediawiki.org
 rewrite	*softwarewikipedia.org	//www.mediawiki.org
