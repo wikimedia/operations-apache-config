@@ -465,4 +465,5 @@ try {
 	if ( $parser && $parser->getLine( $e->lineNum ) ) {
 		print "{$e->lineNum}: " . $parser->getLine( $e->lineNum ) . "\n";
 	}
+	exit(1);
 }
