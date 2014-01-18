@@ -283,7 +283,6 @@ funnel	*wikpedia.org	//www.wikipedia.org
 rewrite	*.wiktionary.com	//*.wiktionary.org
 rewrite	wiktionary.com	//www.wiktionary.org
 rewrite	www.wiktionary.com	//www.wiktionary.org
-rewrite	wiktionary.wikipedia.org	//en.wiktionary.org
 
 # Wikisource
 
