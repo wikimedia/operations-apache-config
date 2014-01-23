@@ -1,6 +1,6 @@
 # domain-redirects.dat -- The oyster knife of URL manipulation
 # vim: ft=conf ts=12
-# 
+#
 # Each non-blank line consists of a rule with whitespace-separated
 # parameters. The first parameter is the command name, which may be funnel,
 # rewrite or override.
@@ -10,10 +10,10 @@
 #   Redirect a whole domain (or set of domains) to a single URL
 #
 # rewrite	<domain-wildcard>	<dest>
-# 
+#
 #   Rewrite the URLs in one domain (or set of domains) to URLs in another
 #   domain with an optional path prefix. A trailing slash in <dest> is ignored.
-#   A leading slash is implied in the source path. 
+#   A leading slash is implied in the source path.
 #
 # override	<domain-wildcard><path>	<dest>
 #
@@ -469,3 +469,6 @@ override	*jobs.wikipedia.org/	//wikimediafoundation.org/wiki/Work_with_us
 funnel	mobile.wikipedia.org	//m.wikipedia.org
 rewrite	*.mobile.wikipedia.org	//*.m.wikipedia.org
 rewrite	*.wap.wikipedia.org	//*.m.wikipedia.org
+
+# pywikipedia.org (bug #58803).
+funnel	*pywikipedia.org	//tools.wmflabs.org/pywikibot/
