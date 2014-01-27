@@ -387,9 +387,10 @@ rewrite	www.meta.wikimedia.org	//meta.wikimedia.org
 rewrite	quality.wikipedia.org	//quality.wikimedia.org
 rewrite	quality.wikipedia.com	//quality.wikimedia.org
 
-rewrite	bugzilla.wikipedia.org	https://bugzilla.wikimedia.org
-rewrite	bugs.mediawiki.org	https://bugzilla.wikimedia.org
-rewrite	bugzilla.mediawiki.org	https://bugzilla.wikimedia.org
+# Bugzilla redirects from historic URLs
+funnel	bugzilla.wikipedia.org	https://bugzilla.wikimedia.org
+funnel	bugs.mediawiki.org	https://bugzilla.wikimedia.org
+funnel	bugzilla.mediawiki.org	https://bugzilla.wikimedia.org
 
 rewrite	mediawiki.org	//www.mediawiki.org
 rewrite	*mediawiki.com	//www.mediawiki.org
