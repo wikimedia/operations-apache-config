@@ -1,0 +1,8 @@
+Verified+2: jenkins-bot
+Code-Review+2: Faidon Liambotis <faidon@wikimedia.org>
+Code-Review+1: JanZerebecki <jan.wikimedia@zerebecki.de>
+Submitted-by: Faidon Liambotis <faidon@wikimedia.org>
+Submitted-at: Tue, 28 Jan 2014 10:10:18 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/106108
+Project: operations/apache-config
+Branch: refs/heads/master
