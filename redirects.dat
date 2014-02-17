@@ -422,6 +422,8 @@ funnel	pk.wikimedia.org	//meta.wikimedia.org/wiki/Wikimedia_Community_User_Group
 # pt.wikimedia.org was migrated to wikimedia.pt
 funnel	pt.wikimedia.org	http://wikimedia.pt/
 
+rewrite	uk.wikimedia.org	https://wikimedia.org.uk/
+
 rewrite	ve.wikimedia.org	http://wikimedia.org.ve
 
 
