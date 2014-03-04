@@ -1,3 +1,5 @@
 # UUID                                  	Group Name
 #
+2bc47fcadf4e44ec9a1a73bcfa06232554f47ce2	JenkinsBot
+3fdcf8fd0d569e90a3e9b39788a29f2c50d33be9	wmf-deployment
 ldap:cn=ops,ou=groups,dc=wikimedia,dc=org	ldap/ops
