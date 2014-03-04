@@ -1,0 +1,7 @@
+*~
+*.swp
+.svn
+*.bak
+THIS_DIRECTORY_IS_UNDER_SVN_CONTROL___PLEASE_SUBMIT_YOUR_CHANGES
+/broken/
+/archive/
