@@ -234,7 +234,6 @@ rewrite	*wikimemory.org	//wikimedia.org
 
 # Wikipedia
 
-
 rewrite	*en-wp.com	//en.wikipedia.org
 rewrite	*en-wp.org	//en.wikipedia.org
 
@@ -284,13 +283,13 @@ rewrite	*.wiktionary.com	//*.wiktionary.org
 rewrite	wiktionary.com	//www.wiktionary.org
 rewrite	www.wiktionary.com	//www.wiktionary.org
 rewrite	wiktionary.wikipedia.org	//en.wiktionary.org
+funnel	*wiktionary.eu	//www.wiktionary.org
 
 # Wikisource
 
 rewrite	sources.wikipedia.org	//wikisource.org
 rewrite	*.wikisource.com	//*.wikisource.org
 rewrite	wikisource.com	//wikisource.org
-
 
 # Wikiquote
 
