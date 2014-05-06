@@ -482,3 +482,6 @@ rewrite	*.wap.wikipedia.org	//*.m.wikipedia.org
 
 # pywikipedia.org (bug #58803).
 funnel	*pywikipedia.org	//tools.wmflabs.org/pywikibot/
+
+# w.wiki - upcoming URL shortener
+funnel	*w.wiki	//www.wikipedia.org
