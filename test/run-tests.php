@@ -11,6 +11,9 @@ class RunRedirectTests {
 		'http://wiktionary.org/' => 'http://www.wiktionary.org/',
 		'http://wiktionary.org/x' => 'http://www.wiktionary.org/x',
 		'https://wiktionary.org/x' => 'https://www.wiktionary.org/x',
+		'http://en.wikipedia.org/wiki/Main_Page' => 'HTTP 404',
+		'https://en.wikipedia.org/wiki/Main_Page' => 'HTTP 404',
+		'https://en.wikisource.org/w/index.php?title=Special:UserLogin&returnto=Page%3ALake+Ngami.djvu%2F391&returntoquery=action%3Dedit' => 'HTTP 404',
 	);
 
 	function execute() {
@@ -51,16 +54,17 @@ class RunRedirectTests {
 			$info = curl_getinfo( $c );
 			if ( $info['http_code'] == 301 || $info['http_code'] == 302 ) {
 				if (preg_match( '/Location: (.*)\\r\\n/', $result, $m )) {
-					if ( $m[1] == $expectedDest ) {
-						$this->success();
-					} else {
-						$this->fail( $source, $expectedDest, $m[1] );
-					}
+					$result = $m[1];
 				} else {
-					$this->fail( $source, $expectedDest, "no location header" );
+					$result = 'no location header';
 				}
 			} else {
-				$this->fail( $source, $expectedDest, "Unexpected HTTP code \"{$info['http_code']}\"" );
+				$result = "HTTP {$info['http_code']}";
+			}
+			if ( $expectedDest == $result ) {
+				$this->success();
+			} else {
+				$this->fail( $source, $expectedDest, $result );
 			}
 		}
 		print "\nKilling server $pid\n";

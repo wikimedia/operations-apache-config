@@ -237,7 +237,7 @@ class DomainRedirectParser {
 				$dest .= '/';
 			}
 		} elseif ( preg_match( '!^//([^/]*)(/.*$|$)!', $dest, $m ) ) {
-			$dest = '%{ENV:HTTP_X_Forwarded_Proto}:' . $dest;
+			$dest = '%{ENV:RW_PROTO}:' . $dest;
 			$domain = $m[1];
 			$path = $m[2];
 			if ( $path === '' ) {
@@ -404,9 +404,9 @@ class DomainRedirectParser {
 
 	RewriteEngine On
 
-	RewriteRule . - [E=HTTP_X_Forwarded_Proto:%{HTTP:X-Forwarded-Proto}]
-	RewriteCond %{ENV:HTTP_X_Forwarded_Proto} !=https
-	RewriteRule . - [E=HTTP_X_Forwarded_Proto:http]
+	RewriteRule . - [E=RW_PROTO:%{HTTP:X-Forwarded-Proto}]
+	RewriteCond %{ENV:RW_PROTO} !=https
+	RewriteRule . - [E=RW_PROTO:http]
 
 EOT
 		);
