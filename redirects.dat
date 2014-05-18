@@ -496,3 +496,6 @@ funnel	*pywikipedia.org	//tools.wmflabs.org/pywikibot/
 
 # w.wiki - upcoming URL shortener
 funnel	*w.wiki	//www.wikipedia.org
+
+# usne -> us.ne
+funnel	usne.wikimedia.org	//us-ne.wikimedia.org
