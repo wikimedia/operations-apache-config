@@ -437,6 +437,8 @@ funnel	pt.wikimedia.org	http://wikimedia.pt
 
 rewrite	uk.wikimedia.org	https://wikimedia.org.uk/
 
+rewrite	usne.wikimedia.org	//us-ne.wikimedia.org
+
 rewrite	ve.wikimedia.org	http://wikimedia.org.ve
 
 
