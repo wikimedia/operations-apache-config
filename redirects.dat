@@ -118,6 +118,12 @@ rewrite	nb.wikipedia.org	//no.wikipedia.org
 # renamed chapter wiki - bug 38763
 rewrite	pa.us.wikimedia.org	//pa-us.wikimedia.org
 
+# arbcom
+rewrite	arbcom.de.wikipedia.org	https://arbcom-de.wikipedia.org
+rewrite	arbcom.en.wikipedia.org	https://arbcom-en.wikipedia.org
+rewrite	arbcom.fi.wikipedia.org	https://arbcom-fi.wikipedia.org
+rewrite	arbcom.nl.wikipedia.org	https://arbcom-nl.wikipedia.org
+
 rewrite	tp.wikipedia.org	//tokipona.wikipedia.org
 
 rewrite	zh-cfr.wikipedia.org	//zh-min-nan.wikipedia.org
@@ -230,7 +236,6 @@ rewrite	*wikipedia.lt	//lt.wikipedia.org
 rewrite	*wikimemory.org	//www.wikimedia.org
 
 # Wikipedia
-
 
 rewrite	*en-wp.com	//en.wikipedia.org
 rewrite	*en-wp.org	//en.wikipedia.org
@@ -496,3 +501,4 @@ funnel	*pywikipedia.org	//tools.wmflabs.org/pywikibot/
 
 # w.wiki - upcoming URL shortener
 funnel	*w.wiki	//www.wikipedia.org
+
