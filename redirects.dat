@@ -496,3 +496,9 @@ funnel	*pywikipedia.org	//tools.wmflabs.org/pywikibot/
 
 # w.wiki - upcoming URL shortener
 funnel	*w.wiki	//www.wikipedia.org
+
+# arbcom
+rewrite arbcom.de.wikipedia.org //arbcom-de.wikipedia.org
+rewrite arbcom.en.wikipedia.org //arbcom-en.wikipedia.org
+rewrite arbcom.fi.wikipedia.org //arbcom-fi.wikipedia.org
+rewrite arbcom.nl.wikipedia.org //arbcom-nl.wikipedia.org
