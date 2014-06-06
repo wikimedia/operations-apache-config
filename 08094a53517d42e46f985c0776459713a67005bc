@@ -1,0 +1,7 @@
+Verified+2: jenkins-bot
+Code-Review+2: BryanDavis <bdavis@wikimedia.org>
+Submitted-by: jenkins-bot
+Submitted-at: Fri, 06 Jun 2014 01:00:30 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/137846
+Project: operations/apache-config
+Branch: refs/heads/betacluster
