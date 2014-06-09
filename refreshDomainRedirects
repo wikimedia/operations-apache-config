@@ -330,7 +330,7 @@ class DomainRedirectParser {
 				$inboundRegex = $inboundRule['domainRegex'];
 				$wildcardPos = strpos( $outboundDomain, '%1' );
 				if ( $wildcardPos !== false ) {
-					$outboundSuffix = substr( $outboundDomain, $wildcardPos + 1 );
+					$outboundSuffix = substr( $outboundDomain, $wildcardPos + 2 );
 					if ( $outboundSuffix == substr( $inboundDomain, -strlen( $outboundSuffix ) ) ) {
 						throw new DomainRedirectParser_Error(
 							"double redirect: rule has destination domain $outboundDomain " .
