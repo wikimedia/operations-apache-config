@@ -181,7 +181,7 @@ override	education.wikimedia.org/syllabus	//outreach.wikimedia.org/wiki/Educatio
 override	education.wikimedia.org/welcometowikipedia	//commons.wikimedia.org/wiki/File:Welcome_to_Wikipedia_brochure_EN.pdf
 override	education.wikimedia.org/instructorbasics	//commons.wikimedia.org/wiki/File:Instructor_Basics_How_to_Use_Wikipedia_as_a_Teaching_Tool.pdf
 
-funnel	education.wikimedia.org	//outreach.wikimedia.org/wiki/Wikipedia_Education_Program
+funnel	education.wikimedia.org	//outreach.wikimedia.org/wiki/Education
 
 # Localised TLDs
 
