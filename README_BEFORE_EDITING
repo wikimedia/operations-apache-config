@@ -13,3 +13,12 @@ Do you have a patch pending?
 
 It is quite easy to migrate it to the other repository, just ask for
 assistance in #wikimedia-operations or to the ops list.
+
+For one patch:
+browse to modules/mediawiki/files/apache/sites in operations/puppet.git
+
+git fetch https://gerrit.wikimedia.org/r/operations/apache-config refs/changes/88/146088/1 && git cherry-pick FETCH_HEAD
+git review && git reset HEAD~1 --hard
+
+
+For multiple patches you can modify the migraterepo.php script included in this repo.
