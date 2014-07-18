@@ -1,0 +1,15 @@
+This repository has been discontinued.
+
+As of July 18th, 2014, apache configurations are directly managed
+within puppet, and the config files are under:
+
+modules/mediawiki/files/apache/sites
+
+please edit them there. 
+
+
+Do you have a patch pending? 
+---------------------------
+
+It is quite easy to migrate it to the other repository, just ask for
+assistance in #wikimedia-operations or to the ops list.
