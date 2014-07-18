@@ -4,7 +4,9 @@
 // Copy and run script from working copy of operations/puppet.git in modules/mediawiki/files/apache/sites folder
 
 $file = file_get_contents( 'https://gerrit.wikimedia.org/r/changes/?q=status:open+project:operations/apache-config+owner:Reedy' );
-$file = str_replace( ")]}'", '', $file, 1 );
+
+// Remove cruft from start of file
+$file = str_replace( ")]}'", '', $file );
 $json = json_decode( $file );
 
 //var_dump( $json );
