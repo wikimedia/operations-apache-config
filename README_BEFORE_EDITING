@@ -1,11 +1,11 @@
-This repository has been discontinued.
+This Git repository has been discontinued.
 
-As of July 18th, 2014, apache configurations are directly managed
-within puppet, and the config files are under:
+As of July 18, 2014, Apache configuration is directly managed within the
+operations/puppet Git repository, specifically:
 
-modules/mediawiki/files/apache/sites
+operations/puppet.git/modules/mediawiki/files/apache/sites
 
-please edit them there. 
+Please edit the Apache configuration files there.
 
 
 Do you have a patch pending? 
